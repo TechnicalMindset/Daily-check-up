@@ -58,8 +58,8 @@ For a more visual and organized presentation of my journey, visit my GitHub Page
 🤝 Connect With Me
 If you're also learning or working in the IT field, feel free to connect! I'm open to sharing insights, collaborating on projects, or simply learning together.
 
-Email: hello.technicalmindset@gmail.com
-LinkedIn: Alison Rodriguez
+- Email: hello.technicalmindset@gmail.com
+- LinkedIn: Alison Rodriguez
 
 ✨ Thanks for visiting, and I hope you enjoy following along on my journey from zero to IT specialist! ✨
 
