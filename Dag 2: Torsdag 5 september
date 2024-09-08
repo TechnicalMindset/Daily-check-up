@@ -1,0 +1,15 @@
+🤓 Basic Formulas in Excel
+
+
+- Den här dagen fokuserade jag på grundläggande funktioner och formler i Excel. jag lärde mig att använda enkla matematiska operationer och formler, som:
+
+
+⭕️ Addition: =B4+B5+B6 (adderar värden i cellerna B4, B5 och B6)
+⭕️ Subtraktion: =E4-E5 (subtraherar värdet i E5 från E4)
+⭕️ Multiplikation: =G6*H6 (multiplicerar värdena i G6 och H6)
+⭕️ Division: =L3/12 (dividerar värdet i L3 med 12)
+
+- Dessa grundläggande operationer hjälper mig att snabbt utföra matematiska beräkningar och analysera data.
+
+- Exempel 1:
+Om jag har tre utgifter i cellerna B4, B5 och B6 och vill veta den totala kostnaden, kan jag använda =B4+B5+B6.
