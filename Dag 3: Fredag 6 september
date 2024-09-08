@@ -1,0 +1,85 @@
+Den här dagen lärde jag mig hur man utför grundläggande dataanalys i Excel, med fokus på sortering och filtrering samt pivottabeller. Jag började också med ett projekt för försäljningsdataanalys, där jag använde verktyg för att sortera och filtrera data.
+Några funktioner jag lärde mig:
+
+Ctrl + E: Väljer automatiskt alla celler i ett område.
+Sortering och filtrering: Verktyg för att omorganisera och analysera data efter specifika kriterier. (TABLA)
+Jag använde också IF-funktionen för att avgöra om ett visst antal enheter är kvalificerade för rabatt:
+Formeln =IF(J5>=20,"Yes","No") kontrollerar om värdet i cell J5 är större än eller lika med 20. Om det är sant, returnerar den "Yes", annars "No".
+Exempel 2:
+Om jag vill veta om en kund ska få rabatt baserat på hur många enheter de har köpt, kan du använda =IF(A1>=20,"Rabatt","Ingen rabatt") där A1 är antalet köpta enheter.
+
+
+
+Hur VLOOKUP fungerar:
+Tänk dig att du har en stor låda full med leksaker, och varje leksak har en siffra som säger vilken leksak det är. Till exempel:
+Bilen
+Dockan
+Flygplanet
+Nu vill du hitta vilken leksak som hör till en viss siffra. Funktionen VLOOKUP är som en magisk bok där du säger till den: "Hjälp mig hitta vilken leksak som har nummer 2!" och boken svarar "Dockan!"
+Hur VLOOKUP fungerar:
+Du säger vilket nummer du letar efter (t.ex. 2).
+Du visar var alla leksaker och nummer finns (t.ex. en lista med siffror och leksaker).
+Du säger i vilken kolumn leksakerna är (t.ex. i kolumn 2).
+Du säger om du vill ha en exakt matchning (det måste vara precis nummer 2) eller en ungefärlig matchning (något som är nära nummer 2).
+Exempel:
+Om du säger till VLOOKUP:
+"Hitta nummer 2 i lådan!"
+Då tittar den i listan och svarar: "Det är Dockan."
+Om du säger "Hitta något nära nummer 2, även om det inte finns exakt", då kanske den svarar Bilen om det inte hittar exakt nummer 2 men 1 är det närmaste.
+Så VLOOKUP hjälper dig att snabbt hitta saker, som att söka efter rätt leksak i en stor låda full av olika grejer!
+
+
+
+
+
+När det används TRUE eller FALSE?
+I vissa andra funktioner i Excel används TRUE och FALSE på liknande sätt som i VLOOKUP, men deras betydelse kan variera beroende på sammanhanget. Här är några vanliga funktioner där dessa värden dyker upp:
+1. MATCH-funktionen
+TRUE: Sök efter en ungefärlig matchning (samma som i VLOOKUP). Listan måste vara sorterad i stigande ordning.
+FALSE: Sök efter en exakt matchning. Listan behöver inte vara sorterad.
+Exempel: =MATCH(4, A1:A10, TRUE) skulle leta efter det närmaste värdet till 4.
+2. IF-funktionen
+TRUE och FALSE används för att skapa villkor.
+TRUE: Om ett villkor är sant, gör något.
+FALSE: Om ett villkor är falskt, gör något annat.
+Exempel: =IF(A1 > 10, "Stor", "Liten") säger att om värdet i cell A1 är större än 10, returnera "Stor"; annars returnera "Liten".
+3. AND och OR-funktionerna
+TRUE: Resultatet blir TRUE om alla (AND) eller minst en (OR) av de angivna villkoren är sanna.
+FALSE: Resultatet blir FALSE om villkoren inte uppfylls (för AND betyder det att minst ett villkor är falskt, och för OR betyder det att inget villkor är sant).
+Exempel: =AND(A1 > 5, B1 < 10) returnerar TRUE om båda villkoren är sanna, annars FALSE.
+ HLOOKUP (lik VLOOKUP)
+Precis som i VLOOKUP, används TRUE för ungefärliga matchningar och FALSE för exakta matchningar.
+Exempel: =HLOOKUP("Äpple", A1:D3, 2, FALSE) letar efter en exakt matchning av "Äpple" i den första raden.
+Summering
+Ja, TRUE och FALSE fungerar på liknande sätt i flera funktioner i Excel, men deras exakta betydelse beror på funktionen du använder. TRUE används ofta för ungefärliga matchningar eller för att indikera att ett villkor är sant, medan FALSE används för exakta matchningar eller när ett villkor är falskt.
+
+
+
+
+Skapa en Pivottabell i Excel
+Pivottabeller är ett kraftfullt verktyg i Excel som gör det möjligt att sammanfatta och analysera data på ett enkelt och effektivt sätt. De hjälper dig att identifiera trender och mönster i dina data genom att jämföra olika variabler. Här är en steg-för-steg-guide för att skapa en pivottabell:
+Steg för att Skapa en Pivottabell:
+Markera Data:
+För att skapa en pivottabell, börja med att markera hela datatabellen. Du kan göra detta manuellt genom att klicka och dra över de celler som innehåller din försäljningsdata. Se till att inkludera kolumnrubrikerna i markeringen.
+Infoga Pivottabell:
+Gå till fliken Infoga i menyfliksområdet.
+Klicka på Pivottabell. En dialogruta kommer att öppnas.
+Välj Plats för Pivottabellen:
+Du får alternativet att placera pivottabellen antingen i ett nytt arbetsblad eller i det befintliga arbetsbladet. Välj det alternativ som passar dig bäst och klicka på OK.
+Dra och Släpp Fält:
+En panel för pivottabellen kommer att visas på höger sida av skärmen. Här kan du dra och släppa fält från din datatabell till olika områden:
+Rader: Lägg till de variabler du vill analysera (t.ex. Produktnamn, Försäljningsregion).
+Kolumner: Lägg till variabler som du vill jämföra (t.ex. Månad).
+Värden: Lägg till de numeriska värden du vill sammanfatta (t.ex. Totala försäljningar). Du kan också välja hur dessa värden ska sammanställas (summa, medelvärde, antal osv.).
+Filter: Lägg till variabler som du vill kunna filtrera data med (t.ex. År eller kategori).
+Analysera och Justera:
+När du har lagt till fält kommer pivottabellen att uppdateras automatiskt. Du kan ändra arrangemanget av fält i panelen för pivottabellen för att se olika perspektiv på dina data.
+Format och Anpassa:
+Du kan också formatera pivottabellen för att göra den mer läsbar. Använd formateringsverktygen i fliken Design under Pivottabellverktyg för att ändra utseendet.
+Exempel på Användning av Pivottabeller:
+Försäljningsanalys: Använd en pivottabell för att jämföra försäljning per produktkategori och månad. Detta kan hjälpa dig att identifiera vilka produkter som säljer bäst under olika perioder.
+Kundanalys: Om du har data om kunder kan du använda pivottabellen för att se hur mycket varje kund har köpt under en viss tidsperiod.
+Geografisk Analys: Om din data innehåller försäljning per region kan en pivottabell hjälpa dig att jämföra försäljning mellan olika geografiska områden.
+Sammanfattning
+Pivottabeller är ett ovärderligt verktyg för att sammanfatta och analysera data i Excel. Genom att följa stegen ovan kan du enkelt skapa och anpassa pivottabeller för att få insikter från dina data. Det gör det också möjligt att snabbt justera dina analyser efter behov.
+
