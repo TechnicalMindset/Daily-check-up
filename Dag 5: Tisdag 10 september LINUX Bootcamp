@@ -1,0 +1,35 @@
+
+Idag tog jag ett stort steg in i operativsystemens värld, och jag lärde mig mycket! 🌐 Här är en sammanfattning av vad jag fokuserade på:
+
+Operativsystemens värld & Unix 🌍
+Jag fick en djupare förståelse för vad Unix och Unix-liknande system är. 🖥️ Det var spännande att utforska den ursprungliga Unix-handboken, som gav mig en inblick i hur allt började. Det var som att gå tillbaka i tiden till när allt grundades. 🌱
+
+Linux, GNU och Kernels 💻
+Jag har också börjat förstå skillnaden mellan Linux, GNU, och Kernels. Att lära sig om hur allt hänger ihop, från kärnan (Kernel) till användargränssnittet, gjorde att jag fick en klarare bild av systemets inre funktioner. Det känns nästan som att ha tittat under huven på en bil för första gången! 🚗🔧
+
+Terminaler, skal och bash 🖥️
+Jag blev introducerad till terminaler, skal och bash och deras betydelse. Det är fantastiskt att se hur allt fungerar tillsammans, och jag börjar känna mig mer bekväm med att navigera i terminalen. Det finns fortfarande mycket att lära, men det känns bra att vara igång. 💪
+
+Första kommandona 🚀
+Idag fick jag också pröva några av mina första kommandon! 🎉 De kommandon jag jobbade med var:
+ncal
+cal
+clear
+date
+sort
+rm
+
+
+Kommandoradsargument och alternativ
+Jag lärde mig också hur man använder kommandoradsargument och tillhandahåller alternativ till kommandon. Ett exempel är när jag använde ncal -h för att visa kalendern med helgdagar. Det kändes riktigt coolt att se hur man kan specificera olika alternativ för att få precis det resultat man vill ha.
+
+Alternativ med parametrar 📋
+En annan viktig del av dagens lektion var att förstå alternativ som kräver parametrar. Jag jobbade med kommandon som:
+ncal -A1 → Visar en månad efter aktuell månad.
+ncal -B2 → Visar två månader innan aktuell månad.
+Jag testade flera varianter och det gav mig en känsla för hur man kan manipulera kommandona för att få olika resultat. Det är som att ge terminalen exakta instruktioner för vad man vill ha! 🤓
+
+Utmaningar och framsteg 💡
+Att navigera med piltangenterna i terminalen var en bra påminnelse om att det finns små tricks som gör livet enklare. Jag känner mig dock fortfarande lite osäker på alla kombinationer av alternativ och parametrar – men det blir lättare med övning. 🧠🔄
+
+Imorgon fortsätter jag med ännu fler kommandon och fördjupningar i terminalen. Jag ser verkligen fram emot att bli ännu mer bekväm och börja sätta ihop mer avancerade kommandon! 😄
