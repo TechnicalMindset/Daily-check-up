@@ -1,0 +1,98 @@
+Dagens Linux-rapport 🖥️
+
+
+🖥️Idag har jag lärt mig flera viktiga kommandon och koncept i Linux som hjälper mig att navigera och förstå systemet bättre. Här är en sammanfattning av vad jag har lärt mig och hur jag kan använda dessa verktyg.
+1. Man Pages och man-kommandot 📜
+
+Man-sidor (manual pages) är inbyggda hjälpmanualer i Linux som ger detaljerad information om olika kommandon och deras funktionalitet. Genom att använda man-kommandot kan jag se dessa manualer direkt i terminalen.
+
+Exempel:
+
+bash
+Kopiera kod
+man ls
+Detta visar manualsidan för kommandot ls och ger mig detaljerad information om alla tillgängliga alternativ och användningsområden för ls.
+2. man -k-kommandot 🔍
+Flaggan -k med man-kommandot används för att söka efter specifika nyckelord i man-sidornas rubriker och beskrivningar. Det är ett utmärkt sätt att hitta ett kommando om jag inte är säker på exakt vad det heter.
+Exempel:
+bash
+Kopiera kod
+man -k passwd
+Detta kommando söker efter alla manualer relaterade till ordet "passwd" och visar relevanta resultat, som passwd, gpasswd och andra relaterade kommandon.
+3. passwd-kommandot 🔑
+Kommandot passwd används för att ändra lösenordet för en användare. Om jag bara skriver passwd utan några argument kommer det att uppmana mig att ändra lösenordet för mitt eget konto.
+Exempel:
+bash
+Kopiera kod
+passwd
+Detta låter mig ändra mitt lösenord via terminalen.
+4. type-kommandot 🛠️
+Kommandot type låter mig ta reda på vilken typ av kommando jag kör. Det kan hjälpa mig att förstå om ett kommando är en inbyggd funktion i shell, en alias eller en extern binär fil.
+Exempel:
+bash
+Kopiera kod
+type ls
+Detta kommando visar om ls är en inbyggd funktion eller en extern programfil. Svaret kan vara något i stil med:
+bash
+Kopiera kod
+ls is /bin/ls
+
+
+5. less-kommandot 📄
+less används för att visa innehållet i en fil en sida i taget, vilket är användbart för att läsa stora textfiler utan att öppna hela filen på en gång.
+Exempel:
+bash
+Kopiera kod
+less myfile.txt
+Med less kan jag bläddra framåt och bakåt i textfilen med piltangenterna.
+6. which-kommandot 🔍
+Kommandot which hjälper mig att hitta den exakta platsen för en körbar fil som associeras med ett kommando. Det visar sökvägen till var kommandot ligger i filsystemet.
+Exempel:
+bash
+Kopiera kod
+which python
+Detta kommando visar mig exakt var Python-exekveringen finns, t.ex. /usr/bin/python.
+7. who-kommandot 🧑‍💻
+Kommandot who visar en lista över inloggade användare, och det har flera användbara alternativ. Ett av dessa är -b, som visar tiden för den senaste systembooten.
+Exempel:
+bash
+Kopiera kod
+who -b
+Detta visar när systemet senast startades om:
+perl
+Kopiera kod
+system boot  2024-09-11 10:32
+
+
+8. whoami-kommandot 👤
+Kommandot whoami används för att visa vilket användarkonto jag för närvarande är inloggad som. Om svaret är root betyder det att jag är inloggad som superuser och har fulla administrativa rättigheter i systemet.
+Exempel:
+bash
+Kopiera kod
+whoami
+Detta ger ett svar som:
+Kopiera kod
+root
+vilket betyder att jag för närvarande har root-privilegier.
+9. Betydelsen av [] i Linux 📝
+I Linux-kommandodokumentation används [] (hakparenteser) för att indikera att ett argument är valfritt. När jag ser något som [FILENAME] betyder det att jag kan ange ett filnamn, men att det inte är nödvändigt för att kommandot ska fungera. Hakparenteserna själva skrivs inte när jag kör kommandot.
+Exempel:
+bash
+Kopiera kod
+cat [FILENAME]
+Detta betyder att jag kan köra kommandot cat med eller utan ett filnamn, beroende på vad jag vill göra.
+Sammanfattning 📚
+
+- Idag har jag fått en djupare förståelse för hur jag kan navigera Linux-systemet med hjälp av viktiga kommandon som man, less, which, who, och whoami. Här är en kort sammanfattning av kommandona vi har gått igenom:
+man – Visar manualsidor för kommandon.
+man -k – Sök efter nyckelord i manualsidor.
+passwd – Ändra användarlösenord.
+type – Kontrollera vilken typ av kommando något är.
+less – Visa filer en sida i taget.
+which – Visa sökvägen till ett kommando.
+who -b – Visa tiden för senaste systembooten.
+whoami – Visa vilket användarkonto jag är inloggad som.
+Hakparenteser [] – Anger valfria argument i kommandon.
+Dessa verktyg kommer att vara mycket användbara för att felsöka, förstå systemet och navigera effektivt i en Linux-miljö. 🌟
+
+
