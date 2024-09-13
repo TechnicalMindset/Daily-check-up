@@ -1,1 +1,75 @@
+14. Förstå uppmaningen
+Den första viktiga lärdomen var att förstå terminalens uppmaning. Det är grunden för att interagera med systemet och för att veta var vi är i filsystemet. 🖥️
 
+15. VIKTIG ANMÄRKNING: Kommandot ncal
+Lärde mig att ncal är ett kalenderkommando som kan visa en månadskalender i terminalen, något som är praktiskt för att snabbt kolla datum utan att lämna terminalen. 📅
+
+16. Våra första kommandon!
+Genomgången av våra allra första kommandon, som pwd, ls och cd, var en viktig milstolpe. Dessa kommandon är basverktyg för att navigera i filsystemet. 🗂️
+
+17. Använda piltangenterna i terminalen
+Att kunna använda upp- och nedpilarna för att bläddra igenom tidigare kommandon är en stor tidsbesparing. Det gör arbetet mycket snabbare och effektivare. ⌨️
+
+18. Kommandoradsargument
+Jag förstod att kommandon kan ta argument för att modifiera deras beteende, vilket ger större flexibilitet och precision när man jobbar i terminalen. 🛠️
+
+19. Tillhandahålla alternativ till kommandon
+Vi utforskade hur kommandon kan ta olika alternativ (eller flaggor) för att ge olika resultat, t.ex. ls -l för att få en detaljerad lista av filer. 📜
+
+20. Kombinera flera alternativ
+Lärde mig hur jag kan kombinera flera alternativ samtidigt, till exempel ls -lh för både långformad och humanläsbar filstorleksinformation. ⚙️
+
+21. Använda långformsalternativ
+Förståelsen av långformsalternativ som --help hjälper till att göra kommandon mer läsbara och lättare att använda. Detta ger klarare instruktioner än kortare flaggor. 📖
+
+22. Alternativ som kräver parametrar
+Vi lärde oss om flaggor som kräver extra parametrar, till exempel cd följt av en katalog. Detta ger mer dynamik åt kommandon. 🧭
+
+SECTION 4 – Fördjupning i Manualsidor och Navigering 📚
+23. Vad som faktiskt är viktigt i detta avsnitt
+Att förstå vad som verkligen är viktigt – manualen är ovärderlig för att få detaljerad information om kommandon.
+
+24. Introduktion av manualen
+Manualsidorna (man) ger detaljerade förklaringar och exempel för varje kommando, vilket är en viktig resurs. Jag har lärt mig att söka upp och läsa dessa. 🔍
+
+25. Navigera och söka på en man-sida
+Genom att använda sökkommandon i manualsidor (som /) kan jag snabbt hitta relevant information. ⏳
+
+26. Parsing Man Page Synopses
+Att förstå synopsis-delen av en man-sida är avgörande för att veta hur ett kommando ska användas.
+
+27. De 7 manuella avsnitten & sökning
+Det finns 7 sektioner i manualen, och att förstå vilken sektion som är relevant hjälper till att hitta rätt information. 🗂️
+
+28. Typ- och vilka-kommandona
+Jag har övat på kommandona type och which för att kontrollera var kommandon är lagrade och om de är interna eller externa. ⚙️
+
+29. Använda hjälpkommandot
+--help är en snabbare väg till korta hjälptexter utan att behöva hela manualen. 🆘
+
+32. Rotkatalogen
+Rotkatalogen (/) är toppen av filsystemet. Härifrån kan man navigera till alla andra mappar. 🏔️
+
+33. Hemkatalogen
+Hemkatalogen (/home) är där alla personliga filer lagras. Det är min "hemma-bas" när jag jobbar. 🏡
+
+34. Pwd-kommandot
+pwd visar alltid var jag befinner mig i filsystemet. Det är praktiskt för att aldrig tappa bort sig. 📍
+
+35. Använda ls
+ls listar innehållet i en katalog. Vi har övat på att använda detta för att snabbt få en överblick över filer och mappar. 👀
+
+36. Användbara alternativ för ls
+Att kombinera flaggor som ls -a och ls -l ger olika typer av användbar information om filer. 📑
+
+37. Ändra kataloger med cd
+cd låter mig flytta mellan kataloger. Det är ett av de viktigaste kommandona för navigering. 🚶‍♀️
+
+38. Relativa vs. Absoluta vägar
+Jag har nu förstått skillnaden mellan relativa och absoluta sökvägar när jag navigerar mellan mappar. Detta är avgörande för att undvika förvirring. 🛤️
+
+Quiz 3: Navigationsquiz
+Jag avslutade dagen med ett navigationsquiz, vilket hjälpte mig att befästa mina kunskaper om filsystemet. ✔️
+
+39. Översikt över andra mappar
+Till sist fick vi en översikt över andra viktiga mappar i Linux-filsystemet, vilket ger mig en bredare förståelse för hur allt är organiserat. 🗺️
