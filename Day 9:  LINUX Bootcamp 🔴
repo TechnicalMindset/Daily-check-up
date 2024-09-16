@@ -1,1 +1,82 @@
 
+🎯 Dagrapport: Min Linux-Lärdag! 🎯
+👩‍💻 Idag var en spännande dag fylld med massor av nyttiga insikter om Linux-system! Här är en sammanfattning av vad jag har lärt mig och vilka problem jag lyckades lösa, tillsammans med svaren på några viktiga frågor som dök upp!
+
+📁 Översikt av mappar 📁
+Jag började med att utforska olika mappar och fick en bättre förståelse för Linux filsystem:
+
+sudo -i: Detta kommando ger root-åtkomst, vilket är nödvändigt för att ändra systemfiler eller navigera till skyddade områden.
+ls /bin: Visar innehållet i /bin, som står för binary. Här lagras många av systemets grundläggande körbara program (exempelvis kommandon som ls, cp, och mv).
+🤔 Fråga: Varför är vissa kommandon lagrade i /bin och inte i andra mappar som /usr/bin?
+
+Svar: /bin innehåller grundläggande kommandon som systemet behöver för att kunna starta och fungera normalt. Dessa program är tillgängliga även när systemet är i single-user mode. /usr/bin används för att lagra fler användarrelaterade kommandon som inte är nödvändiga för systemstart men som kan behövas när systemet körs i fleranvändarläge.
+🔧 Troubleshooting 1: Åtkomstproblem 🔧
+Jag stötte på åtkomstproblem när jag försökte navigera i systemet. Lösningen? Använda rätt kommandon!
+
+sudo -i: För att få tillgång till administratörsbehörigheter.
+ls /bin: För att lista filerna i bin-mappen.
+👉 Tips: Tänk på att när du får åtkomstproblem kan det bero på användarbehörigheter, vilket är viktigt att förstå i Linux.
+
+🤔 Fråga: Vad är skillnaden mellan att köra sudo -i och bara köra sudo före ett kommando?
+
+Svar: sudo -i öppnar en ny root-skal (en ny session som root), medan att köra sudo före ett kommando bara ger tillfälliga root-behörigheter för det specifika kommandot.
+🗂️ Utforskning av fler kataloger 🗂️
+Jag utforskade några andra viktiga mappar:
+
+cd /etc: Går till /etc, en mapp där systemets konfigurationsfiler lagras.
+cd /var: Byter till /var, där dynamiska filer som loggar och tidsbegränsade data lagras.
+cd /usr: Byter till /usr, som innehåller de flesta användarverktygen och applikationerna.
+🤔 Fråga: Varför är loggfilerna i /var/log och inte i någon annan katalog?
+
+Svar: /var står för variable, vilket innebär att den innehåller filer som ändras kontinuerligt, som loggfiler och spolarfiler. Detta gör det lätt att separera statiska filer (som program i /usr) från dynamiska filer som loggar och cache-filer.
+🔐 Troubleshooting 2: Nekade rättigheter 🔐
+När jag försökte kontrollera mappar fick jag ett meddelande om nekat tillstånd. Här är vad jag gjorde:
+
+sudo su: För att växla till root-användare och få full tillgång.
+sudo ls /root: Använde sudo för att lista filer i root-mappen, som bara är åtkomlig för administratörer.
+visudo: Öppnade sudo-konfigurationen för att kontrollera användarbehörigheter. Här hittade jag raden ALL=(ALL:ALL) ALL som ger full åtkomst till alla kommandon.
+💡 Första introduktionen till nano-textredigeraren: Jag redigerade sudo-filen med nano och lärde mig att det är en enkel men kraftfull textredigerare för systemfiler!
+
+🤔 Fråga: Vad gör visudo exakt och varför är det viktigt?
+
+Svar: visudo är ett verktyg för att redigera sudoers-filen på ett säkert sätt. Den låser filen medan du redigerar den och utför en syntaxkontroll innan den sparas, vilket hjälper till att undvika fel som kan låsa ut administratörer från systemet.
+🔄 Relative och Absolute Paths 🔄
+Jag lärde mig skillnaden mellan relativa och absoluta sökvägar:
+
+Absolut sökväg: Anger den fullständiga sökvägen från root (ex: /home/user/Documents).
+Relativ sökväg: Baseras på den nuvarande katalogen. Till exempel, om du är i /home/user, kan du använda cd Documents istället för att ange hela vägen.
+Exempel:
+
+Absolut: cd /home/user/Documents
+Relativ: cd Documents
+🤔 Fråga: När ska man använda relativ sökväg jämfört med absolut?
+
+Svar: Använd relativa sökvägar när du arbetar inom en specifik mappstruktur och vill undvika att skriva hela vägen varje gång. Absoluta sökvägar används när du behöver exakt referera till en plats oavsett var du befinner dig i filsystemet.
+🛠️ Troubleshooting 3: Navigering mellan Ubuntu och Windows 🛠️
+Jag löste ett problem med att navigera mellan Ubuntu och Windows genom att använda kommandot:
+
+find /mnt/c/User/Downloads: Detta kommando hjälpte mig att hitta den specifika mappen på Windows från Ubuntu.
+✏️ Insikt: Jag insåg att de tidigare problemen uppstod på grund av bristande förståelse för relativa och absoluta sökvägar, något jag definitivt behöver träna mer på!
+
+🤔 Fråga: Varför finns det skillnader i sökvägar mellan Windows och Linux?
+
+Svar: Linux använder ett enhetligt filsystem där allt utgår från root (/), medan Windows har separata partitioner och enheter (som C: och D:). När du kör Linux och vill komma åt Windows-filer monteras de under /mnt eller liknande kataloger.
+💭 Reflektion och nästa steg 💭
+Dagens lärdomar har verkligen hjälpt mig att förstå Linux-systemet bättre. Det jag ska fokusera på nu är att:
+
+Bli mer bekväm med nano och andra textredigerare.
+Öva mer på behörigheter och användning av sudo.
+Finslipa mina kunskaper kring sökvägar för att undvika framtida problem med navigation.
+Kommandon att repetera:
+
+sudo -i
+ls /bin
+cd /etc
+cd /var/log
+cd /usr
+sudo su
+sudo ls /root
+visudo
+👩‍🏫 Fråga att utforska: Hur fungerar egentligen sökvägar i mer komplexa system, som när man jobbar med flera användare och nätverksanslutna enheter?
+
+Det var allt för idag! 👏 Jag ser fram emot att dyka ännu djupare in i Linux-världen imorgon! 🌱
