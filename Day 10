@@ -44,9 +44,7 @@ Exempel:
 Detta kommando är bra när jag bara vill skapa en tom fil utan att lägga till något innehåll.
 echo låter mig skriva innehåll till en fil direkt:
 Exempel:
-bash
-Kopiera kod
-echo "Det här är en ny fil" > newfile.txt
+📛echo "Det här är en ny fil" > newfile.txt
 
 
 Med echo kan jag både skapa en fil och lägga till text i den samtidigt.
@@ -56,9 +54,7 @@ Svar: touch skapar en tom fil utan innehåll, medan echo låter mig skriva inneh
 Jag använde också cat-kommandot för att visa innehållet i filer. Detta kommando var användbart när jag ville se vad jag hade skrivit i en fil utan att öppna en textredigerare.
 Exempel:
 För att visa innehållet i filen firstfile.txt:
-bash
-Kopiera kod
-cat firstfile.txt
+📛cat firstfile.txt
 
 
 Jag kunde snabbt se texten jag hade skrivit tidigare, vilket var en stor tidsbesparing!
