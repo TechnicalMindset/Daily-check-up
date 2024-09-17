@@ -30,15 +30,15 @@ Exempel:
 
 Jag lärde mig också att använda mkdir -p för att skapa hela mappstrukturer på en gång:
 
-mkdir -p HuvudMapp/Undermapp
+📛 mkdir -p HuvudMapp/Undermapp
 Med det här kommandot skapas både huvudmappen och undermappen i en enda operation.
+
+
 📄 Skapa och visa filer: touch vs. echo
 En viktig del av dagens lärande var att förstå skillnaderna mellan touch och echo när man skapar filer.
 touch skapar en tom fil:
 Exempel:
-bash
-Kopiera kod
-touch firstfile.txt
+📛touch firstfile.txt
 
 
 Detta kommando är bra när jag bara vill skapa en tom fil utan att lägga till något innehåll.
