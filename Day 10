@@ -7,12 +7,11 @@ Min Dagsrapport – Navigering, Filhantering och Kommandon i Linux 🌟
 Exempel:
 Jag navigerade till en specifik katalog på min Windows-enhet med detta kommando:
 
-cd /mnt/c/Users/phili/Downloads/Farm
+📛 cd /mnt/c/Users/phili/Downloads/Farm
 Här insåg jag att /mnt är monteringspunkten där Linux ansluter till Windows-filsystemet. Det innebär att jag kan komma åt Windows-filer och mappar genom Linux-terminalen. Det var riktigt nyttigt att förstå detta samband!
 Jag insåg också att vissa filer fanns både i Downloads och OneDrive, så jag navigerade till den rätta platsen genom att justera sökvägen:
-bash
-Kopiera kod
-cd /mnt/c/Users/phili/OneDrive/Farm
+
+📛cd /mnt/c/Users/phili/OneDrive/Farm
 
 
 🗂️ Att gå upp i kataloger med cd
