@@ -63,8 +63,8 @@ Jag löste ett problem med att navigera mellan Ubuntu och Windows genom att anv�
 ✏️ Insikt: Jag insåg att de tidigare problemen uppstod på grund av bristande förståelse för relativa och absoluta sökvägar, något jag definitivt behöver träna mer på!
 
 🤔 Fråga: Varför finns det skillnader i sökvägar mellan Windows och Linux?
-
 Svar: Linux använder ett enhetligt filsystem där allt utgår från root (/), medan Windows har separata partitioner och enheter (som C: och D:). När du kör Linux och vill komma åt Windows-filer monteras de under /mnt eller liknande kataloger.
+
 💭 Reflektion och nästa steg 💭
 Dagens lärdomar har verkligen hjälpt mig att förstå Linux-systemet bättre. Det jag ska fokusera på nu är att:
 
@@ -73,12 +73,12 @@ Bli mer bekväm med nano och andra textredigerare.
 Finslipa mina kunskaper kring sökvägar för att undvika framtida problem med navigation.
 Kommandon att repetera:
 
-sudo -i
-ls /bin
-cd /etc
-cd /var/log
-cd /usr
-sudo su
+🔴sudo -i
+🔴ls /bin
+🔴cd /etc
+🔴cd /var/log
+🔴cd /usr
+🔴sudo su
 sudo ls /root
 visudo
 👩‍🏫 Fråga att utforska: Hur fungerar egentligen sökvägar i mer komplexa system, som när man jobbar med flera användare och nätverksanslutna enheter?
