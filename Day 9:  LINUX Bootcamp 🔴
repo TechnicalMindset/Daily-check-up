@@ -24,18 +24,19 @@ Svar: sudo -i öppnar en ny root-skal (en ny session som root), medan att köra 
 🗂️ Utforskning av fler kataloger 🗂️
 Jag utforskade några andra viktiga mappar:
 
-cd /etc: Går till /etc, en mapp där systemets konfigurationsfiler lagras.
-cd /var: Byter till /var, där dynamiska filer som loggar och tidsbegränsade data lagras.
-cd /usr: Byter till /usr, som innehåller de flesta användarverktygen och applikationerna.
-🤔 Fråga: Varför är loggfilerna i /var/log och inte i någon annan katalog?
+🔴cd /etc: Går till /etc, en mapp där systemets konfigurationsfiler lagras.
+🔴cd /var: Byter till /var, där dynamiska filer som loggar och tidsbegränsade data lagras.
+🔴cd /usr: Byter till /usr, som innehåller de flesta användarverktygen och applikationerna.
 
+🤔 Fråga: Varför är loggfilerna i /var/log och inte i någon annan katalog?
 Svar: /var står för variable, vilket innebär att den innehåller filer som ändras kontinuerligt, som loggfiler och spolarfiler. Detta gör det lätt att separera statiska filer (som program i /usr) från dynamiska filer som loggar och cache-filer.
+
 🔐 Troubleshooting 2: Nekade rättigheter 🔐
 När jag försökte kontrollera mappar fick jag ett meddelande om nekat tillstånd. Här är vad jag gjorde:
+🔴sudo su: För att växla till root-användare och få full tillgång.
+🔴sudo ls /root: Använde sudo för att lista filer i root-mappen, som bara är åtkomlig för administratörer.
+🔴visudo: Öppnade sudo-konfigurationen för att kontrollera användarbehörigheter. Här hittade jag raden ALL=(ALL:ALL) ALL som ger full åtkomst till alla kommandon.
 
-sudo su: För att växla till root-användare och få full tillgång.
-sudo ls /root: Använde sudo för att lista filer i root-mappen, som bara är åtkomlig för administratörer.
-visudo: Öppnade sudo-konfigurationen för att kontrollera användarbehörigheter. Här hittade jag raden ALL=(ALL:ALL) ALL som ger full åtkomst till alla kommandon.
 💡 Första introduktionen till nano-textredigeraren: Jag redigerade sudo-filen med nano och lärde mig att det är en enkel men kraftfull textredigerare för systemfiler!
 
 🤔 Fråga: Vad gör visudo exakt och varför är det viktigt?
