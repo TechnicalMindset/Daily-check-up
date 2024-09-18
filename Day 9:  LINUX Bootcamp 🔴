@@ -40,24 +40,26 @@ När jag försökte kontrollera mappar fick jag ett meddelande om nekat tillstå
 💡 Första introduktionen till nano-textredigeraren: Jag redigerade sudo-filen med nano och lärde mig att det är en enkel men kraftfull textredigerare för systemfiler!
 
 🤔 Fråga: Vad gör visudo exakt och varför är det viktigt?
-
 Svar: visudo är ett verktyg för att redigera sudoers-filen på ett säkert sätt. Den låser filen medan du redigerar den och utför en syntaxkontroll innan den sparas, vilket hjälper till att undvika fel som kan låsa ut administratörer från systemet.
+
 🔄 Relative och Absolute Paths 🔄
 Jag lärde mig skillnaden mellan relativa och absoluta sökvägar:
 
-Absolut sökväg: Anger den fullständiga sökvägen från root (ex: /home/user/Documents).
-Relativ sökväg: Baseras på den nuvarande katalogen. Till exempel, om du är i /home/user, kan du använda cd Documents istället för att ange hela vägen.
+- Absolut sökväg: Anger den fullständiga sökvägen från root (ex: /home/user/Documents).
+- Relativ sökväg: Baseras på den nuvarande katalogen. Till exempel, om du är i /home/user, kan du använda cd Documents istället för att ange hela vägen.
 Exempel:
 
-Absolut: cd /home/user/Documents
-Relativ: cd Documents
-🤔 Fråga: När ska man använda relativ sökväg jämfört med absolut?
+🔴Absolut: cd /home/user/Documents
+🔴Relativ: cd Documents
 
+🤔 Fråga: När ska man använda relativ sökväg jämfört med absolut?
 Svar: Använd relativa sökvägar när du arbetar inom en specifik mappstruktur och vill undvika att skriva hela vägen varje gång. Absoluta sökvägar används när du behöver exakt referera till en plats oavsett var du befinner dig i filsystemet.
+
 🛠️ Troubleshooting 3: Navigering mellan Ubuntu och Windows 🛠️
 Jag löste ett problem med att navigera mellan Ubuntu och Windows genom att använda kommandot:
 
-find /mnt/c/User/Downloads: Detta kommando hjälpte mig att hitta den specifika mappen på Windows från Ubuntu.
+🔴find /mnt/c/User/Downloads: Detta kommando hjälpte mig att hitta den specifika mappen på Windows från Ubuntu.
+
 ✏️ Insikt: Jag insåg att de tidigare problemen uppstod på grund av bristande förståelse för relativa och absoluta sökvägar, något jag definitivt behöver träna mer på!
 
 🤔 Fråga: Varför finns det skillnader i sökvägar mellan Windows och Linux?
