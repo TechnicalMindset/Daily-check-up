@@ -5,11 +5,12 @@
 📁 Översikt av mappar 📁
 Jag började med att utforska olika mappar och fick en bättre förståelse för Linux filsystem:
 
-sudo -i: Detta kommando ger root-åtkomst, vilket är nödvändigt för att ändra systemfiler eller navigera till skyddade områden.
-ls /bin: Visar innehållet i /bin, som står för binary. Här lagras många av systemets grundläggande körbara program (exempelvis kommandon som ls, cp, och mv).
-🤔 Fråga: Varför är vissa kommandon lagrade i /bin och inte i andra mappar som /usr/bin?
+🔴sudo -i: Detta kommando ger root-åtkomst, vilket är nödvändigt för att ändra systemfiler eller navigera till skyddade områden.
+🔴ls /bin: Visar innehållet i /bin, som står för binary. Här lagras många av systemets grundläggande körbara program (exempelvis kommandon som ls, cp, och mv).
 
+🤔 Fråga: Varför är vissa kommandon lagrade i /bin och inte i andra mappar som /usr/bin?
 Svar: /bin innehåller grundläggande kommandon som systemet behöver för att kunna starta och fungera normalt. Dessa program är tillgängliga även när systemet är i single-user mode. /usr/bin används för att lagra fler användarrelaterade kommandon som inte är nödvändiga för systemstart men som kan behövas när systemet körs i fleranvändarläge.
+
 🔧 Troubleshooting 1: Åtkomstproblem 🔧
 Jag stötte på åtkomstproblem när jag försökte navigera i systemet. Lösningen? Använda rätt kommandon!
 
