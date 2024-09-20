@@ -66,7 +66,7 @@ Svar: mkdir skapar en enda mapp, medan mkdir -p låter mig skapa en hel mappstru
 3. När är det bättre att använda touch istället för echo?
 Svar: Använd touch när jag bara vill skapa en tom fil utan att lägga till något innehåll. Använd echo när jag både vill skapa filen och skriva innehåll i den direkt.
 4. Vad gör kommandot cat, och när ska jag använda det?
-Svar: cat visar innehållet i en fil direkt i terminalen. Det är användbart när jag snabbt vill läsa en fil utan att öppna den i en textredigerare.
+-Svar: cat visar innehållet i en fil direkt i terminalen. Det är användbart när jag snabbt vill läsa en fil utan att öppna den i en textredigerare.
 
 
 📚 Övningar för att stärka mina kunskaper:
