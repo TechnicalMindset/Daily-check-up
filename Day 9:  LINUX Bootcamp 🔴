@@ -25,6 +25,7 @@ Svar: sudo -i öppnar en ny root-skal (en ny session som root), medan att köra 
 🗂️ Utforskning av fler kataloger 🗂️
 Jag utforskade några andra viktiga mappar:
 
+
 🔴cd /etc: Går till /etc, en mapp där systemets konfigurationsfiler lagras.
 🔴cd /var: Byter till /var, där dynamiska filer som loggar och tidsbegränsade data lagras.
 🔴cd /usr: Byter till /usr, som innehåller de flesta användarverktygen och applikationerna.
