@@ -14,6 +14,7 @@ Svar: /bin innehåller grundläggande kommandon som systemet behöver för att k
 🔧 Troubleshooting 1: Åtkomstproblem 🔧
 Jag stötte på åtkomstproblem när jag försökte navigera i systemet. Lösningen? Använda rätt kommandon!
 
+
 🔴sudo -i: För att få tillgång till administratörsbehörigheter.
 🔴ls /bin: För att lista filerna i bin-mappen.
 👉 Tips: Tänk på att när du får åtkomstproblem kan det bero på användarbehörigheter, vilket är viktigt att förstå i Linux.
