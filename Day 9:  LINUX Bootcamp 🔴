@@ -50,6 +50,7 @@ Jag lärde mig skillnaden mellan relativa och absoluta sökvägar:
 - Relativ sökväg: Baseras på den nuvarande katalogen. Till exempel, om du är i /home/user, kan du använda cd Documents istället för att ange hela vägen.
 Exempel:
 
+
 🔴Absolut: cd /home/user/Documents
 🔴Relativ: cd Documents
 
