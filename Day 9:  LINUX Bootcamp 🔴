@@ -21,6 +21,7 @@ Jag stötte på åtkomstproblem när jag försökte navigera i systemet. Lösnin
 🤔 Fråga: Vad är skillnaden mellan att köra sudo -i och bara köra sudo före ett kommando?
 Svar: sudo -i öppnar en ny root-skal (en ny session som root), medan att köra sudo före ett kommando bara ger tillfälliga root-behörigheter för det specifika kommandot.
 
+
 🗂️ Utforskning av fler kataloger 🗂️
 Jag utforskade några andra viktiga mappar:
 
