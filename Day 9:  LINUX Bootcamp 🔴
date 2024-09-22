@@ -68,6 +68,7 @@ Svar: Linux använder ett enhetligt filsystem där allt utgår från root (/), m
 💭 Reflektion och nästa steg 💭
 Dagens lärdomar har verkligen hjälpt mig att förstå Linux-systemet bättre. Det jag ska fokusera på nu är att:
 
+
 Bli mer bekväm med nano och andra textredigerare.
 Öva mer på behörigheter och användning av sudo.
 Finslipa mina kunskaper kring sökvägar för att undvika framtida problem med navigation.
