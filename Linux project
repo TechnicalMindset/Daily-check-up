@@ -1,1 +1,118 @@
+Linux Project: Automatiserad Backup av Filer med Kompression och E-postnotifiering
+Projektmål: Automatisera säkerhetskopiering av viktiga filer på en server. Denna säkerhetskopia ska komprimeras för att spara utrymme, lagras på en annan plats, och en e-postnotifiering ska skickas efter att säkerhetskopian är klar.
 
+Steg-för-steg-guide:
+Installera nödvändiga verktyg:
+
+tar (för att komprimera filer)
+gzip (för att komprimera backupen)
+mailutils (för att skicka e-postnotifiering)
+Skapa en katalogstruktur:
+
+Bestäm var säkerhetskopiorna ska lagras.
+Bestäm vilka filer eller kataloger som ska säkerhetskopieras.
+Skriva ett bash-script:
+
+Scriptet kommer att:
+Komprimera filerna.
+Kopiera säkerhetskopian till en säker katalog.
+Skicka en notifiering via e-post när säkerhetskopian är klar.
+Schemalägga säkerhetskopian:
+
+Använd cron för att automatisera säkerhetskopian, exempelvis dagligen.
+Steg 1: Installera nödvändiga verktyg
+På en Ubuntu-server, installera tar, gzip, och mailutils om de inte redan är installerade:
+
+bash
+Kopiera kod
+sudo apt update
+sudo apt install tar gzip mailutils
+Steg 2: Skapa katalogstrukturen
+Bestäm var säkerhetskopian ska lagras, t.ex. i /home/user/backups, och vilka filer du vill säkerhetskopiera, t.ex. /var/www/ och /etc/.
+
+Skapa katalogen där säkerhetskopiorna ska lagras:
+
+bash
+Kopiera kod
+mkdir -p /home/user/backups
+Steg 3: Skriva bash-skriptet
+Skapa ett bash-skript, t.ex. backup.sh, som hanterar hela processen.
+
+bash
+Kopiera kod
+#!/bin/bash
+
+# Ange källkatalogerna som ska säkerhetskopieras
+SOURCE_DIRECTORIES="/var/www /etc"
+
+# Ange backup-katalogen
+BACKUP_DIRECTORY="/home/user/backups"
+
+# Skapa ett filnamn med dagens datum
+DATE=$(date +"%Y%m%d")
+BACKUP_FILE="$BACKUP_DIRECTORY/backup_$DATE.tar.gz"
+
+# Skapa en säkerhetskopia med tar och komprimera med gzip
+tar -czf $BACKUP_FILE $SOURCE_DIRECTORIES
+
+# Kontrollera om backupen lyckades
+if [ $? -eq 0 ]; then
+    # Skicka ett e-postmeddelande om lyckad säkerhetskopia
+    echo "Backup completed successfully on $(date)" | mail -s "Backup Success" user@example.com
+else
+    # Skicka ett e-postmeddelande om backupen misslyckades
+    echo "Backup failed on $(date)" | mail -s "Backup Failed" user@example.com
+fi
+SOURCE_DIRECTORIES: Definiera de kataloger du vill säkerhetskopiera.
+BACKUP_DIRECTORY: Där säkerhetskopian kommer att sparas.
+tar -czf: Skapar en komprimerad backup-fil.
+E-postnotifiering: Skriptet skickar en notifiering om backupen lyckades eller misslyckades.
+Steg 4: Göra scriptet exekverbart
+Gör skriptet exekverbart med följande kommando:
+
+bash
+Kopiera kod
+chmod +x /path/to/backup.sh
+Steg 5: Schemalägga backupen med cron
+Öppna crontab för att lägga till ett cron-jobb:
+
+bash
+Kopiera kod
+crontab -e
+Lägg till följande rad för att köra säkerhetskopian varje dag kl. 2 på morgonen:
+
+bash
+Kopiera kod
+0 2 * * * /path/to/backup.sh
+Detta kommer att köra backup-scriptet dagligen och säkerställa att du får en notifiering via e-post om backupen lyckas eller misslyckas.
+
+Slutligt bash-skript
+Här är hela scriptet för projektet:
+
+bash
+Kopiera kod
+#!/bin/bash
+
+# Ange källkatalogerna som ska säkerhetskopieras
+SOURCE_DIRECTORIES="/var/www /etc"
+
+# Ange backup-katalogen
+BACKUP_DIRECTORY="/home/user/backups"
+
+# Skapa ett filnamn med dagens datum
+DATE=$(date +"%Y%m%d")
+BACKUP_FILE="$BACKUP_DIRECTORY/backup_$DATE.tar.gz"
+
+# Skapa en säkerhetskopia med tar och komprimera med gzip
+tar -czf $BACKUP_FILE $SOURCE_DIRECTORIES
+
+# Kontrollera om backupen lyckades
+if [ $? -eq 0 ]; then
+    # Skicka ett e-postmeddelande om lyckad säkerhetskopia
+    echo "Backup completed successfully on $(date)" | mail -s "Backup Success" user@example.com
+else
+    # Skicka ett e-postmeddelande om backupen misslyckades
+    echo "Backup failed on $(date)" | mail -s "Backup Failed" user@example.com
+fi
+Real World Application
+Detta projekt kan användas för att regelbundet säkerhetskopiera viktiga filer på en server och få notifieringar om backupen lyckades. Det är ett praktiskt sätt att skydda data på och säkerställa kontinuerlig drift i verkliga systemadministrationsmiljöer.
