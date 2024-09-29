@@ -1,5 +1,40 @@
+🗓️ Dagrapportering: Git Arbete - Linux simple register
 
-Dagrapport:
+Datum: 29 September 2024
+
+🛠️ Vad har jag gjort idag?
+Jag har arbetat med att skapa och hantera ett Git-repository för min HTML-fil. 🎉
+
+📁 Steg 1: Skapa Repository
+
+Skapat ett nytt repository på GitHub för att lagra min fil uppdrag.html. 📂
+Använde Git CMD för att initiera repositoryt lokalt. 🖥️
+
+📜 Steg 2: Lägga till filer
+Skapade en HTML-fil med strukturerad kod. ✍️
+Försökte använda kommandot git add för att lägga till filen i repositoryt.
+
+⚠️ Problem med filnamn
+Stötte på problem när jag försökte lägga till filen:
+Felmeddelande: "pathspec 'Deleting,moving' did not match any files" 🤦‍♂️
+Identifierade att filnamnet hade mellanslag och kommatecken som orsakade problemen.
+
+🔄 Lösning
+Använde citattecken runt filnamnet för att lösa problemet:
+bash
+Kopiera kod
+git add "Deleting,moving & copying exercise.html"
+Övervägde också att byta namn på filen till ett enklare format för framtida arbete. ✏️
+
+✅ Slutsats
+Lärde mig vikten av att hantera filnamn korrekt i Git. 📚
+Fortsatte att utforska Git-kommandon och deras användning för versionskontroll. 🔍
+
+💡 Framtida planer
+Jag planerar att fortsätta arbeta med Git för att bli mer bekant med dess funktioner.
+Kommer att experimentera med mer avancerade kommandon och begrepp som branching och merging. 🌱
+
+Dagrapport: Git och linux 
 
 Idag har jag övat på att arbeta med Linux-kommandon och skapat mappar och filer samt flyttat filer mellan olika mappar.
 
