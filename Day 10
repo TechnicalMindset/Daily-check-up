@@ -14,12 +14,10 @@ cd Bootcamp/FallCohort: Går in i mappen FallCohort.
 🍎touch Italo.txt Edgar.txt Linus.txt Sara.txt Silvio.txt: Skapar fem textfiler med namnen Italo.txt, Edgar.txt, Linus.txt, Sara.txt och Silvio.txt i mappen FallCohort.
 Efter att ha skapat dessa filer behövde jag flytta filen Netta.txt från mappen Waitlist, som också finns i Bootcamp, till mappen FallCohort. Jag använde kommandot:
 
-bash
-Kopiera kod
-mv Netta.txt ../FallCohort/
+🍎mv Netta.txt ../FallCohort/
+
 Förklaring av skillnaden mellan path-kommandona:
 Här behövde jag använda ../FallCohort/ eftersom jag befann mig i mappen Waitlist. .. i Linux innebär att man går upp en nivå till föräldramappen, som i detta fall är Bootcamp. Efter att ha gått upp en nivå navigerar jag in i mappen FallCohort, där jag vill placera filen Netta.txt.
-
 Varför använde jag ../FallCohort/ här?
 
 Jag var i mappen Waitlist, så jag behövde gå tillbaka en nivå för att komma till Bootcamp med hjälp av ...
