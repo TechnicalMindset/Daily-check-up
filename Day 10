@@ -5,12 +5,13 @@ Idag har jag övat på att arbeta med Linux-kommandon och skapat mappar och file
 
 Först skapade jag en ny mappstruktur med kommandot:
 
-mkdir -p Bootcamp/FallCohort && cd Bootcamp/FallCohort && touch Italo.txt Edgar.txt Linus.txt Sara.txt Silvio.txt
+🍎 mkdir -p Bootcamp/FallCohort && cd Bootcamp/FallCohort && touch Italo.txt Edgar.txt Linus.txt Sara.txt Silvio.txt
 
 Förklaring av kommandot:
-mkdir -p Bootcamp/FallCohort: Skapar mappen Bootcamp och inuti den, mappen FallCohort. Flaggan -p gör att alla föräldrarmappar som inte redan finns skapas automatiskt.
+
+🍎 mkdir -p Bootcamp/FallCohort: Skapar mappen Bootcamp och inuti den, mappen FallCohort. Flaggan -p gör att alla föräldrarmappar som inte redan finns skapas automatiskt.
 cd Bootcamp/FallCohort: Går in i mappen FallCohort.
-touch Italo.txt Edgar.txt Linus.txt Sara.txt Silvio.txt: Skapar fem textfiler med namnen Italo.txt, Edgar.txt, Linus.txt, Sara.txt och Silvio.txt i mappen FallCohort.
+🍎touch Italo.txt Edgar.txt Linus.txt Sara.txt Silvio.txt: Skapar fem textfiler med namnen Italo.txt, Edgar.txt, Linus.txt, Sara.txt och Silvio.txt i mappen FallCohort.
 Efter att ha skapat dessa filer behövde jag flytta filen Netta.txt från mappen Waitlist, som också finns i Bootcamp, till mappen FallCohort. Jag använde kommandot:
 
 bash
