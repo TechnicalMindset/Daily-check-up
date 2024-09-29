@@ -1,0 +1,29 @@
+
+Dagrapport:
+
+Idag har jag övat på att arbeta med Linux-kommandon och skapat mappar och filer samt flyttat filer mellan olika mappar.
+
+Först skapade jag en ny mappstruktur med kommandot:
+
+mkdir -p Bootcamp/FallCohort && cd Bootcamp/FallCohort && touch Italo.txt Edgar.txt Linus.txt Sara.txt Silvio.txt
+
+Förklaring av kommandot:
+mkdir -p Bootcamp/FallCohort: Skapar mappen Bootcamp och inuti den, mappen FallCohort. Flaggan -p gör att alla föräldrarmappar som inte redan finns skapas automatiskt.
+cd Bootcamp/FallCohort: Går in i mappen FallCohort.
+touch Italo.txt Edgar.txt Linus.txt Sara.txt Silvio.txt: Skapar fem textfiler med namnen Italo.txt, Edgar.txt, Linus.txt, Sara.txt och Silvio.txt i mappen FallCohort.
+Efter att ha skapat dessa filer behövde jag flytta filen Netta.txt från mappen Waitlist, som också finns i Bootcamp, till mappen FallCohort. Jag använde kommandot:
+
+bash
+Kopiera kod
+mv Netta.txt ../FallCohort/
+Förklaring av skillnaden mellan path-kommandona:
+Här behövde jag använda ../FallCohort/ eftersom jag befann mig i mappen Waitlist. .. i Linux innebär att man går upp en nivå till föräldramappen, som i detta fall är Bootcamp. Efter att ha gått upp en nivå navigerar jag in i mappen FallCohort, där jag vill placera filen Netta.txt.
+
+Varför använde jag ../FallCohort/ här?
+
+Jag var i mappen Waitlist, så jag behövde gå tillbaka en nivå för att komma till Bootcamp med hjälp av ...
+Sedan navigerade jag in i mappen FallCohort med hjälp av FallCohort/.
+Varför använde jag inte ../ i det tidigare kommandot?
+
+När jag tidigare flyttade filer till mappen Waitlist, var jag redan i mappen Bootcamp, så det var inte nödvändigt att använda ... Jag kunde direkt referera till mappen Bootcamp/Waitlist/ utan att behöva gå upp en nivå.
+Sammanfattningsvis har jag idag lärt mig hur man skapar mappar och filer, samt
