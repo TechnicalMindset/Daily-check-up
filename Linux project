@@ -23,8 +23,6 @@ Använd cron för att automatisera säkerhetskopian, exempelvis dagligen.
 Steg 1: Installera nödvändiga verktyg
 På en Ubuntu-server, installera tar, gzip, och mailutils om de inte redan är installerade:
 
-bash
-Ko
 sudo apt update
 sudo apt install tar gzip mailutils
 Steg 2: Skapa katalogstrukturen
