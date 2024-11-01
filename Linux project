@@ -36,8 +36,6 @@ mkdir -p /home/user/backups
 Steg 3: Skriva bash-skriptet
 Skapa ett bash-skript, t.ex. backup.sh, som hanterar hela processen.
 
-bash
-Kopiera kod
 #!/bin/bash
 
 # Ange källkatalogerna som ska säkerhetskopieras
